@@ -1,0 +1,218 @@
+
+/* CSC-20021 Website Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #243247;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #17365d;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 24px;
+}
+
+section {
+    background-color: white;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2 {
+    line-height: 1.3;
+}
+
+a {
+    color: #1769aa;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #526176;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 12px auto;
+        padding: 12px;
+    }
+
+    section {
+        padding: 16px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #28558a;
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+/* Weather forecast table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th {
+    background-color: #1565c0;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #eaf3ff;
+}
+
+.average-temperature {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0077b6;
+    background-color: #e0f4ff;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+main section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main section h2,
+main section h3 {
+    color: #0077b6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #0077b6;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f8ff;
+}
+
+tr:hover {
+    background-color: #d9f0ff;
+}
+
+.forecast-days {
+    font-size: 16px;
+    font-weight: bold;
+    color: #023e8a;
+    background-color: #caf0f8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Responsive layout for mobile devices */
+@media (max-width: 600px) {
+    main {
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    canvas {
+        max-width: 100%;
+    }
+}
+
+/* Weather dashboard sections */
+main section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+main section h2 {
+    color: #1565c0;
+    margin-top: 0;
+}
+
+.average-temperature {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1565c0;
+}
